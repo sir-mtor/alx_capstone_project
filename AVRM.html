@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFRICAN VEGAN RECIPE MAKER</title>
+    <style>
+        
+        header {
+            background-color: hsla(128, 83%, 21%, 0.533);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AFRICAN VEGAN RECIPE MAKER</h1>
+        <nav>
+            <a href="#lunch">Lunch</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#side-dish">Side Dish</a>
+            <a href="#drinks">Drinks & smoothies</a>
+            <a href="#dessert">Dessert</a>
+            <a href="#sweets">Sweets</a>
+            <a href="#international">International Cuisine</a>
+        </nav>
+    </header>
+    <section>
+        <h2>About AVRM;African Vegan Recipe Maker</h2>
+        <p>Welcome to Vegan Recipes for Africa, your go-to destination for delicious and nutritious plant-based recipes tailored to the African palate. Our mission is to provide you with a diverse selection of recipes that celebrate the abundance of locally available ingredients while promoting sustainability and health.</p>
+        <p>Whether you're a seasoned vegan or just beginning your plant-based journey, our platform offers something for everyone. From traditional African dishes to international cuisines, our recipes are designed to inspire creativity in the kitchen and satisfy your taste buds.</p>
+        <p>Join our vibrant community of food enthusiasts, share your favorite recipes, and discover new culinary delights. Let's embark on this journey together towards a healthier, more compassionate, and environmentally friendly way of eating.</p>
+    </section>
+    <section id="signup">
+        <h2>Sign Up</h2>
+        <form action="#" method="post" id="signup-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+    
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+    
+            <label for="location">Geographical Location:</label>
+            <input type="text" id="location" name="location"><br>
+    
+            <label for="diet">Diet Plan:</label>
+            <input type="text" id="diet" name="diet"><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required><br>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Password must be at least 8 characters long and contain at least one letter and one number" required><br>
+    
+            <label for="social">Social Media Handles:</label>
+            <input type="text" id="social" name="social"><br>
+    
+            <input type="submit" value="Sign Up">
+        </form>
+    </section>
+    <section id="generator">
+        <h2>MAKER</h2>
+        <form action="#" method="post" id="generator-form">
+            <label for="dish-type">Type of Dish:</label>
+            <select id="dish-type" name="dish-type">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="snacks">Snacks</option>
+                <option value="dessert">Dessert</option>
+                <option value="drinks">Drinks</option>
+            </select><br>
+    
+            <label for="cooking-time">Time for Cooking:</label>
+            <select id="cooking-time" name="cooking-time">
+                <option value="less-than-30-minutes">Less than 30 minutes</option>
+                <option value="30-to-60-minutes">30 to 60 minutes</option>
+                <option value="more-than-60-minutes">More than 60 minutes</option>
+            </select><br>
+    
+            <label for="skills-level">Cooking Skills Level:</label>
+            <select id="skills-level" name="skills-level">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select><br>
+    
+            <label for="kitchen-type">Kitchen Type Available:</label>
+            <select id="kitchen-type" name="kitchen-type">
+                <option value="basic-kitchen">Basic Kitchen</option>
+                <option value="fully-equipped-kitchen">Fully Equipped Kitchen</option>
+            </select><br>
+    
+            <input type="submit" value="Generate Recipe">
+        </form>
+    </section>
+    <section id="comments">
+        <h2>Add a Comment or Suggestion</h2>
+        <form action="#" method="post" id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+    
+            <label for="comment">Comment or Suggestion:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <section id="suggested-meals">
+        <h2>want to check out this?</h2>
+        
+        <div class="meal">
+            <a href="recipe1.html"><img src="meal1.jpg" alt="Meal 1"></a>
+            <p><a href="recipe1.html">Meal 1 Recipe</a></p>
+        </div>
+        
+        <div class="meal">
+            <a href="recipe2.html"><img src="meal2.jpg" alt="Meal 2"></a>
+            <p><a href="recipe2.html">Meal 2 Recipe</a></p>
+        </div>
+        
+        <div class="meal">
+            <a href="recipe3.html"><img src="meal3.jpg" alt="Meal 3"></a>
+            <p><a href="recipe3.html">Meal 3 Recipe</a></p>
+        </div>
+    </section>
+    
+    
+    
+    
+</body>
+</html>
