@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFRICAN VEGAN RECIPE MAKER</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="AVRM.css">
     <style>
         
         header {
@@ -42,7 +44,7 @@
         </nav>
     </header>
     <section>
-        <h2>About AVRM;African Vegan Recipe Maker</h2>
+        <h2>About us African Vegan Recipe Maker</h2>
         <p>Welcome to Vegan Recipes for Africa, your go-to destination for delicious and nutritious plant-based recipes tailored to the African palate. Our mission is to provide you with a diverse selection of recipes that celebrate the abundance of locally available ingredients while promoting sustainability and health.</p>
         <p>Whether you're a seasoned vegan or just beginning your plant-based journey, our platform offers something for everyone. From traditional African dishes to international cuisines, our recipes are designed to inspire creativity in the kitchen and satisfy your taste buds.</p>
         <p>Join our vibrant community of food enthusiasts, share your favorite recipes, and discover new culinary delights. Let's embark on this journey together towards a healthier, more compassionate, and environmentally friendly way of eating.</p>
@@ -81,7 +83,7 @@
         </form>
     </section>
     <section id="generator">
-        <h2>MAKER</h2>
+        <h2>RECIPE GENERATOR</h2>
         <form action="#" method="post" id="generator-form">
             <label for="dish-type">Type of Dish:</label>
             <select id="dish-type" name="dish-type">
@@ -112,6 +114,10 @@
                 <option value="basic-kitchen">Basic Kitchen</option>
                 <option value="fully-equipped-kitchen">Fully Equipped Kitchen</option>
             </select><br>
+            <form action="#" method="post" id="ingredients-form">
+                <label for="ingredients">List Your Available Ingredients:</label>
+                <input type="text" id="ingredients" name="ingredients" placeholder="Enter comma-separated list of ingredients" required><br>
+            </form>
     
             <input type="submit" value="Generate Recipe">
         </form>
@@ -132,7 +138,7 @@
         </form>
     </section>
     <section id="suggested-meals">
-        <h2>want to check out this?</h2>
+        <h2>...want to check out this?</h2>
         
         <div class="meal">
             <a href="recipe1.html"><img src="meal1.jpg" alt="Meal 1"></a>
@@ -157,9 +163,11 @@
 <footer>
     <p>...being vegan is a beautiful lifestyle</p>
     <div class="social-links">
-        <a href="https://www.youtube.com/channel/yourchannel" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a>
-        <a href="https://www.instagram.com/yourinstagram" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+        <P>connect with us on</P>
+        <a href="https://www.youtube.com/channel/yourchannel" target="_blank"><img src="yt.jpeg" alt="YouTube"></a>
+        <a href="https://www.instagram.com/yourinstagram" target="_blank"><img src="IG.jpeg" alt="Instagram"></a>
     </div>
+    
 </footer>
 
 </html>
