@@ -65,7 +65,12 @@
             <input type="text" id="location" name="location"><br>
     
             <label for="diet">Diet Plan:</label>
-            <input type="text" id="diet" name="diet"><br>
+            <select id="diet plan" name="diet plan">
+            <option value="gain weight">Gain Weight</option>
+            <option value="loose weight">Loose Weight</option>
+            <option value="stay healthy">Stay Healthy</option>
+            <option value="no plan"></option>No Plan</option>
+            </select><br>
     
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br>
@@ -84,7 +89,8 @@
     </section>
     <section id="generator">
         <h2>RECIPE GENERATOR</h2>
-        <form action="#" method="post" id="generator-form">
+        <form action="#" method="post" id="generator-form" class="generator-form">
+            <div>
             <label for="dish-type">Type of Dish:</label>
             <select id="dish-type" name="dish-type">
                 <option value="breakfast">Breakfast</option>
@@ -94,32 +100,39 @@
                 <option value="dessert">Dessert</option>
                 <option value="drinks">Drinks</option>
             </select><br>
-    
+            </div>
+             <div>
             <label for="cooking-time">Time for Cooking:</label>
             <select id="cooking-time" name="cooking-time">
                 <option value="less-than-30-minutes">Less than 30 minutes</option>
                 <option value="30-to-60-minutes">30 to 60 minutes</option>
                 <option value="more-than-60-minutes">More than 60 minutes</option>
             </select><br>
-    
+            </div>
+             <div>
             <label for="skills-level">Cooking Skills Level:</label>
             <select id="skills-level" name="skills-level">
                 <option value="beginner">Beginner</option>
                 <option value="intermediate">Intermediate</option>
                 <option value="advanced">Advanced</option>
             </select><br>
-    
+            </div>
+            <div>
             <label for="kitchen-type">Kitchen Type Available:</label>
             <select id="kitchen-type" name="kitchen-type">
                 <option value="basic-kitchen">Basic Kitchen</option>
                 <option value="fully-equipped-kitchen">Fully Equipped Kitchen</option>
             </select><br>
+            </div>
+            <div>
             <form action="#" method="post" id="ingredients-form">
-                <label for="ingredients">List Your Available Ingredients:</label>
+                <label for="ingredients">List Your Available Ingredients</label>
                 <input type="text" id="ingredients" name="ingredients" placeholder="Enter comma-separated list of ingredients" required><br>
             </form>
-    
+            </div>
+            <div>
             <input type="submit" value="Generate Recipe">
+            </div>
         </form>
     </section>
     <section id="comments">
@@ -141,17 +154,23 @@
         <h2>...want to check out this?</h2>
         
         <div class="meal">
-            <a href="recipe1.html"><img src="meal1.jpg" alt="Meal 1"></a>
+            <a href="recipe1.html"><img src="red.jpg" alt="Meal 1"></a>
             <p><a href="recipe1.html">Meal 1 Recipe</a></p>
+        </div>
+
+        <div class="meal">
+            <a href="recipe.html"><img src="bay.jpg" alt="meal"></a>
+            <p><a href="rep.html">meal recipe</a></p> 
+
         </div>
         
         <div class="meal">
-            <a href="recipe2.html"><img src="meal2.jpg" alt="Meal 2"></a>
+            <a href="recipe2.html"><img src="peas.jpg" alt="Meal 2"></a>
             <p><a href="recipe2.html">Meal 2 Recipe</a></p>
         </div>
         
         <div class="meal">
-            <a href="recipe3.html"><img src="meal3.jpg" alt="Meal 3"></a>
+            <a href="recipe3.html"><img src="koose.jpg" alt="Meal 3"></a>
             <p><a href="recipe3.html">Meal 3 Recipe</a></p>
         </div>
     </section>
@@ -167,7 +186,7 @@
         <a href="https://www.youtube.com/channel/yourchannel" target="_blank"><img src="yt.jpeg" alt="YouTube"></a>
         <a href="https://www.instagram.com/yourinstagram" target="_blank"><img src="IG.jpeg" alt="Instagram"></a>
     </div>
-    
+
 </footer>
 
 </html>
