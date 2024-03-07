@@ -3,12 +3,16 @@ form {
     max-width: 400px;
     margin: 0 auto;
     background-color: #45a049;
+    
+}
+.generator-form{
+    flex: form;
 }
 header{
     background-image: url('vegan.lo.jpeg'); 
     background-size: contain;
     background-repeat: no-repeat;
-    background-position:top-left;
+    background-position:top-left; 
 }
 label {
     display: block;
@@ -52,14 +56,10 @@ input[type="submit"]:hover {
 }
 
 /* Style for footer */
+
 footer {
-    background-image:(pr);
-    color: #151513;
-    text-align: center;
-    padding: 10;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-image: (pro2.jpg);
+    
 }
 
 footer p {
