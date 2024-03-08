@@ -6,13 +6,28 @@ form {
     
 }
 .generator-form{
-    flex: form;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
 }
+/*.generator-form div{
+    padding: auto;
+}
+*/
 header{
     background-image: url('vegan.lo.jpeg'); 
     background-size: contain;
     background-repeat: no-repeat;
     background-position:top-left; 
+}
+.hero{
+    background-image: url(pro2.jpg);
+}
+.about-us{
+    width: 60%;
+    margin: auto;
 }
 label {
     display: block;
@@ -35,13 +50,15 @@ h2{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: unset;
-    font-variant: small-caps;
+    font-size: large;
 }
 
 textarea {
     height: 100px;
 }
+body {
 
+}
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -58,12 +75,19 @@ input[type="submit"]:hover {
 /* Style for footer */
 
 footer {
-    background-image: (pro2.jpg);
+    
+    background-color: #45a049;
+    background-image: url();
+    background-position: 
     
 }
 
 footer p {
     margin: 0;
+    text-transform: lowercase;
+    text-align: center;
+    font-style: italic;
+    font-size: larger;
 }
 
 .social-links {
@@ -71,7 +95,7 @@ footer p {
 }
 
 .social-links a {
-    display: inline-block;
+    display: contents;
     margin: 0 5px;
 }
 
