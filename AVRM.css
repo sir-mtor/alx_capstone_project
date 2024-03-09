@@ -80,7 +80,7 @@
     width: 20%;
     height: 10%;
     padding-right: 0%;
-    display: ;
+    border-color: #4CAF50;
 }  
 .generator-form{
     display: flex;
@@ -103,9 +103,10 @@
     margin: auto;
     padding: 0px;
 }
-.koose{
-    flex-direction: column;
+.suggest{
+    position:relative;
 }
+
 /* Style for footer */
 
 footer {
