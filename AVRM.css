@@ -66,7 +66,7 @@
     
 
 .signup{
-    background-color:#1d321d;
+    background-color:#8ee28e;
     opacity: 1;
     background-image: url(go\ vegan.jpeg);
     width: 35%;
@@ -103,7 +103,7 @@
     margin: auto;
     padding: 0px;
 }
-.suggest{
+.koose{
     flex-direction: column;
 }
 /* Style for footer */
@@ -115,7 +115,6 @@ footer {
     text-align: center;
     font-size: larger;
     text-decoration: #cccccc;
-    
 }
 
 .social-links {
