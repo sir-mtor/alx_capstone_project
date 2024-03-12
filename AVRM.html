@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFRICAN VEGAN RECIPE MAKER</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="AVRM.css" href="AVRM.js">
+    <link rel="stylesheet" href="AVRM.css" > 
+    <scripts src="AVRM.js"></scripts>
     <style>
         
         header {
@@ -48,15 +49,15 @@
                 <a href="#dessert">Dessert</a>
                 <a href="#international">International Cuisine</a>
             </nav>
+           
         </header>
         <section  class="about-us">
             <h2>About African Vegan Recipe Maker</h2>
-            <p>Welcome to Vegan Recipes for Africa, your go-to web destination for delicious and nutritious plant-based recipes tailored to the African palate. Our mission is to provide you with a diverse selection of recipes that celebrate the abundance of locally available ingredients while promoting sustainability and health.</p>
+            <p>Welcome to Vegan Recipes for the African vegan. Your go-to web destination for delicious and nutritious plant-based recipes tailored to the African palate. Our mission is to provide you with a diverse selection of recipes that celebrate the abundance of locally available ingredients while promoting sustainability and good health.</p>
             <p>Whether you're a seasoned vegan or just beginning your plant-based journey, our platform offers something for everyone. From traditional African dishes to international cuisines, our recipes are designed to inspire creativity in the kitchen and satisfy your taste buds.</p>
             <p>Join our vibrant community of food enthusiasts, share your favorite recipes, and discover new culinary delights. Let's embark on this journey together towards a healthier, more compassionate, and environmentally friendly way of eating.</p>
         </section>
     </section>
-
     <form>
         <div>
             <label id="search-form" class="search">
@@ -99,8 +100,13 @@
             <input type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Password must be at least 8 characters long and contain at least one letter and one number" required><br>
     
             <label for="social">Social Media Handles:</label>
+            <select id="social-links" name="social-links">
+            <option value="none"></option>None</option>
+            <option value="X">X(Twitter)</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Facebook">Facebook</option>
+            </select>
             <input type="text" id="social" name="social"><br>
-    
             <input type="submit" value="Sign Up">
         </form>
     </section>
@@ -145,9 +151,10 @@
             <div>
             <form action="#" method="post" id="ingredients-form">
                 <label for="ingredients">List Your Available Ingredients</label>
-                <input type="text" id="ingredients" name="ingredients" placeholder="Enter comma-separated list of ingredients" required><br>
+                <input type="text" id="ingredients" name="ingredients" placeholder="Enter comma-separated list of ingredients"required style="width: 400px;";><br> 
             </form>
             </div>
+
             <div class="allergies">
             <form action="#" method="post" id="allergies-form">
                 <label for="allergies">Allergies:</label>
@@ -164,58 +171,48 @@
         </form>
     </section>
 
-    <section id="comments" class="comments">
-        <h2>Let's Hear Your Comment or Suggestion</h2>
-        <form action="#" method="post" id="comment-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
+    <form action="#" method="post" id="comment-form" class="comments">
+        <label for="comment-name">Name:</label>
+        <input type="text" id="comment-name" name="comment-name"><br>
     
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br>
+        <label for="comment-email">Email:</label>
+        <input type="email" id="comment-email" name="comment-email"><br>
     
-            <label for="comment">Comment or Suggestion:</label><br>
-            <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+        <label for="comment">Comment or Suggestion:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
     
-            <input type="submit" value="Submit">
-        </form>
-    </section>
-
+        <input type="submit" value="Submit">
+    </form>
     <section id="suggested-meals" class="suggest">
         <h2>...you'd want to try this?</h2>
-        
-        <section>
             <div class="RED-RED">
                 <a href="https://www.myburntorange.com/red-red-ghanaian-bean-stew-vegan-vegetarian-gluten-free/">
                     <img src="red.jpg" alt="RED RED" style="width: 300px; height: 300px;">
                 </a>
-                <p>
-                    <a href="https://www.myburntorange.com/red-red-ghanaian-bean-stew-vegan-vegetarian-gluten-free/">
-                        Red red is a Ghanaian bean stew served with a side of fried plantains and often garnished with gari, a coarse toasted cassava flour. It makes an altogether delightful dish, that is perfectly suitable for vegans and vegetarians alike, and is naturally gluten-free. If you would like to try something new, have a go at this
-                    </a>
-                </p>
+                
+                <a href="https://www.myburntorange.com/red-red-ghanaian-bean-stew-vegan-vegetarian-gluten-free/"><p><h3>Red Red, Ghanaian Bean Stew (Vegan, Vegetarian, Gluten-Free)</h3> Red red is a Ghanaian bean stew served with a side of fried plantains and often garnished with gari, a coarse toasted cassava flour. It makes an altogether delightful dish, that is perfectly suitable for vegans and vegetarians alike, and is naturally gluten-free. If you would like to try something new, have a go at this</p>    
+                </a>
             </div>
         
-            <div class="koose">
+            <div class="RED-RED"> 
                 <a href="https://www.myburntorange.com/how-to-make-koose-savoury-fried-bean-cakes/">
                     <img src="koose.jpg" alt="Meal 3" style="width: 300px; height: 300px;">
                 </a>
-                <p>
-                    <a href="https://www.myburntorange.com/how-to-make-koose-savoury-fried-bean-cakes/">
+                    <a href="https://www.myburntorange.com/how-to-make-koose-savoury-fried-bean-cakes/"><p><h3>How to Make Koose (Savoury Fried Bean Cakes)</h3>
                         Koose is West Africa answer to Middle Eastern falafel. It is made from black-eyed peas, and in this post we will show you how to make koose (savoury fried bean cakes).
                     </a>
                 </p>
             </div>
-        </section>
-  
+    </section>
+    <section>
+    <footer>
+        <p>...we love you being VEGAN!</p>
+        <div class="social-links">
+            <P>connect with us on</P>
+           <a href="https://www.youtube.com/channel/yourchannel" target="_blank"><img src="yt.jpeg" alt="YouTube"></a>
+           <a href="https://www.instagram.com/yourinstagram" target="_blank"><img src="IG.jpeg" alt="Instagram"></a>
+        </div>
+    </footer>
+    </section>
 </body>
-<footer>
-    <p>...being vegan is a beautiful lifestyle</p>
-    <div class="social-links">
-        <P>connect with us on</P>
-       <a href="https://www.youtube.com/channel/yourchannel" target="_blank"><img src="yt.jpeg" alt="YouTube"></a>
-       <a href="https://www.instagram.com/yourinstagram" target="_blank"><img src="IG.jpeg" alt="Instagram"></a>
-    </div>
-
-</footer>
-
 </html>

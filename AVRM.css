@@ -8,14 +8,19 @@
    } */
 
     header{
-        background-image: url('vegan.lo.jpeg'); 
+        background-image: url('vegan.lo.jpeg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position:top-left; 
     }
     .hero{
         background-image: url(pro2.jpg);
+        opacity: 1;
         padding: 10px;
+        font-weight: 700;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        color: #291c07;
     }
     .about-us{
         width: 60%;
@@ -61,20 +66,20 @@
     }
     
     input[type="submit"]:hover {
-        background-color: #45a049;
+        background-color: #a07f45;
     }
     
 
 .signup{
     background-color:#8ee28e;
     opacity: 1;
-    background-image: url(go\ vegan.jpeg);
+    background-image: url();
     width: 35%;
     margin: auto;
     align-items: center;
     font-size:larger;
     font-style: oblique;
-  
+    padding: 20px;
 }
 .search{
     width: 20%;
@@ -94,28 +99,63 @@
     width: 80%;
     margin: auto;
     background-color: #84cf87;
+    opacity: ;
     background-image: url(afric.jpg);
     font-family: 'Times New Roman', Times, ;
 }
 .comments{
-    background-image: url(pro1.jpg);
+    background-image: url(fres.jpg);
     width: 50%;
     margin: auto;
     padding: 0px;
+    border-top: 10px;
 }
 .suggest{
-    position:relative;
+    margin: 0%;
+    color: orangered;
 }
+
+.RED-RED{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.RED-RED a{
+    margin-left: 16px;
+    text-align: left;
+    font-weight: bold;
+    width: 400px;
+}
+a h3{
+    text-decoration: underline;
+    color: goldenrod;
+}
+a{
+    color: olive;
+    text-decoration: none;
+}
+a :hover{
+    text-decoration: underline;
+}
+a :active{
+    text-decoration: #4CAF50;
+}
+a :visited{
+    text-decoration: yellow;
+}
+
+
 
 /* Style for footer */
 
 footer {
-    
     background-color: #45a049;
     background-image: url(plant.jpeg);
     text-align: center;
     font-size: larger;
-    text-decoration: #cccccc;
+    border-radius: 0cm;
+    border: 0cqmax;
+    color: red;
 }
 
 .social-links {
