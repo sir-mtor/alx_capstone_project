@@ -18,13 +18,13 @@ document.getElementById("signup-form").addEventListener("submit", function(event
     }
 });
 
-// Helper function to validate email address
+// function to validate email address
 function isValidEmail(email) {
     var regex = /\S+@\S+\.\S+/;
     return regex.test(email);
 }
 
-// Helper function to validate phone number
+// function to validate phone number
 function isValidPhoneNumber(phone) {
     var regex = /^\d{1,4}-\d{3}-\d{3}-\d{4}$/;
     return regex.test(phone);
@@ -52,6 +52,15 @@ function isUserSignedIn() {
     var isSignedIn = true;
     return isSignedIn;
 }
+// JavaScript to toggle visibility of the signup form when the signup link is clicked
+document.getElementById('signup-link').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+
+    // Toggle visibility of the signup form container
+    var signupFormContainer = document.getElementById('signup-form-container');
+    signupFormContainer.classList.toggle('hidden');
+});
+
 
 // Function to show or hide the generator section based on sign-in status
 function toggleGeneratorVisibility() {

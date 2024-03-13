@@ -7,49 +7,28 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="AVRM.css" > 
     <scripts src="AVRM.js"></scripts>
-    <style>
-        
-        header {
-            background-color: hsla(128, 83%, 21%, 0.533);
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 10px;
-            margin: 0 5px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        nav a:active{
-            text-decoration: yellow;
-        }
-        nav a:visited{
-            text-decoration: yellowgreen;
-        }
-    </style>
 </head>
-<body>
-    <section class="hero">
-        <header>
-            <h1>AFRICAN VEGAN RECIPE MAKER</h1>
-            <nav>
-                <a href="#breakfast">Breakfast</a>
-                <a href="#lunch">Lunch</a>
-                <a href="#side-dish">Side Dish</a>
-                <a href="#drinks">Drinks & smoothies</a>
-                <a href="#dessert">Dessert</a>
-                <a href="#international">International Cuisine</a>
-            </nav>
-           
+<body><section class="hero">
+    <header>
+        <nav>
+            
+                <a href="#home">Home</a>
+                <a href="#recipes">Recipes</a>
+                    <ul class="sub-menu">
+                        <li><a href="#breakfast">Breakfast</a></li>
+                        <li><a href="#lunch">Lunch</a></li>
+                        <li><a href="#side-dish">Side Dish</a></li>
+                        <li><a href="#drinks">Drinks & smoothies</a></li>
+                        <li><a href="#dessert">Dessert</a></li>
+                        <li><a href="#international">International Cuisine</a></li>
+                    </ul>
+                <a href="#favorites">Favorites</a>
+                <a href="#shopping-list">Shopping List</a>
+            
+        </nav>
+    </header>
+</section>
+
         </header>
         <section  class="about-us">
             <h2>About African Vegan Recipe Maker</h2>
@@ -66,10 +45,59 @@
             </label>
         </div>
         </form>
+          <!-- Hidden signup form -->
 
-    <section id="signup" class="signup">
-        <h2>Sign Up here</h2>
-        <form action="#" method="post" id="signup-form">
+    
+         <a href="<section id="signup" class="signup">
+            <div id="signup-form" class="popup-form" style="display:none;">
+            <h2>Sign Up here</h2>
+        <form id="signup-form">
+            <form action="#" method="post" id="signup-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+        
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <label for="location">Country:</label>
+                <input type="text" id="location" name="location"><br>
+        
+                <label for="diet">Diet Plan:</label>
+                <select id="diet plan" name="diet plan">
+                <option value="gain weight">Gain Weight</option>
+                <option value="loose weight">Loose Weight</option>
+                <option value="stay healthy">Stay Healthy</option>
+                <option value="no plan"></option>No Plan</option>
+                </select><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required><br>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Password must be at least 8 characters long and contain at least one letter and one number" required><br>
+        
+                <label for="social">Social Media Handles:</label>
+                <select id="social-links" name="social-links">
+                <option value="none"></option>None</option>
+                <option value="X">X(Twitter)</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                </select>
+                <input type="text" id="social" name="social"><br>
+                <input type="submit" value="Sign Up">
+          
+        </form>
+    </div>
+</section>
+
+    
+        <!-- <form action="#" method="post" id="signup-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br>
     
@@ -107,9 +135,8 @@
             <option value="Facebook">Facebook</option>
             </select>
             <input type="text" id="social" name="social"><br>
-            <input type="submit" value="Sign Up">
-        </form>
-    </section>
+            <input type="submit" value="Sign Up"> -->
+        
    
     <section id="generator" class="generator">
         <h2>RECIPE GENERATOR</h2>
@@ -171,6 +198,7 @@
         </form>
     </section>
 
+    <section>
     <form action="#" method="post" id="comment-form" class="comments">
         <label for="comment-name">Name:</label>
         <input type="text" id="comment-name" name="comment-name"><br>
@@ -183,6 +211,8 @@
     
         <input type="submit" value="Submit">
     </form>
+    </section>
+
     <section id="suggested-meals" class="suggest">
         <h2>...you'd want to try this?</h2>
             <div class="RED-RED">

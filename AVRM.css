@@ -1,22 +1,90 @@
 /* Style for form elements */
-    /* form {
-    max-width: 400px; 
-    margin: 0 auto;
-    background-color: #5d5f5d;
-    opacity: 0.7; 
-    font-family: Arial, Helvetica, sans-serif;
-   } */
-
-    header{
+   header {
+    background-color: hsla(128, 83%, 21%, 0.533);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav a:active{
+    text-decoration: yellow;
+}
+nav a:visited{
+    text-decoration: yellowgreen;
+}
+ header{
         background-image: url('vegan.lo.jpeg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position:top-left; 
     }
+    nav ul .sub-menu {
+        display: none;
+        position: absolute;
+        background-color: #fff; 
+        padding: 10px;
+    }
+    
+    nav ul li:hover .sub-menu {
+        display: block;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        position: relative;
+    }
+    
+    nav ul li:hover .sub-menu {
+        display: block;
+    }
+    
+    nav ul .sub-menu {
+        display: none;
+        position: absolute;
+        background-color: #fff; 
+        padding: 10px;
+        top: 100%;
+        left: 0;
+    }
+    
+    nav ul .sub-menu li {
+        display: inline-block;
+    }
+    
+    nav ul .sub-menu li a {
+        display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #000; 
+    }
+    
+    nav ul .sub-menu li a:hover {
+        background-color: #f0f0f0; 
+    }
+     
     .hero{
         background-image: url(pro2.jpg);
         opacity: 1;
-        padding: 10px;
+        padding: 60px;
+        margin: 5px;
         font-weight: 700;
         font-size: large;
         font-family: 'Times New Roman', Times, serif;
@@ -27,13 +95,14 @@
         margin: auto;
         font-style: normal;
         font-size: large;
+        background-image: url(pro2.jpg);
     }
     label {
         display: block;
         margin-bottom: 5px;
     }
     
-    input[type="text"],
+     input[type="text"],
     input[type="email"],
     input[type="tel"],
     select,
@@ -44,7 +113,7 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         box-sizing: border-box;
-    }
+    } 
     h2{
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -68,47 +137,41 @@
     input[type="submit"]:hover {
         background-color: #a07f45;
     }
-    
-
-.signup{
-    background-color:#8ee28e;
-    opacity: 1;
-    background-image: url();
-    width: 35%;
-    margin: auto;
-    align-items: center;
-    font-size:larger;
-    font-style: oblique;
-    padding: 20px;
+   
+.hidden {
+    display: none;
 }
+
 .search{
     width: 20%;
     height: 10%;
     padding-right: 0%;
     border-color: #4CAF50;
 }  
+
 .generator-form{
     display: flex;
     justify-content: space-between;
     align-content: space-around;
     flex-wrap: wrap;
     padding: 30px;
+    color: #0c0a88;
     
 }
 .generator {
     width: 80%;
     margin: auto;
     background-color: #84cf87;
-    opacity: ;
-    background-image: url(afric.jpg);
+    background-image: url(fres.jpg);
     font-family: 'Times New Roman', Times, ;
 }
 .comments{
-    background-image: url(fres.jpg);
+    background-image: url(afric.jpg);
     width: 50%;
     margin: auto;
-    padding: 0px;
-    border-top: 10px;
+    padding: 10px;
+    
+    
 }
 .suggest{
     margin: 0%;
@@ -153,18 +216,15 @@ footer {
     background-image: url(plant.jpeg);
     text-align: center;
     font-size: larger;
-    border-radius: 0cm;
+    border-radius: 10cm;
     border: 0cqmax;
-    color: red;
-}
-
-.social-links {
-    margin-top: 10px;
+    color:rgb(58, 43, 6);
 }
 
 .social-links a {
     display: contents;
     margin: 0 5px;
+    margin-top: 10px;
 }
 
 .social-links img {
