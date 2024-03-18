@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFRICAN VEGAN RECIPE MAKER</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="AVRM.css" > 
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(fres.jpg);
+        padding: 30px;
+        }
+        .sign{
+            text-align: center;
+        }
+    </style>
+     <h1 class="sign">SIGN-UP</h1>
+        <form action="#" method="post" id="signup-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+    
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+            <label for="location">Country:</label>
+            <input type="text" id="location" name="location"><br>
+    
+            <label for="diet">Diet Plan:</label>
+            <select id="diet plan" name="diet plan">
+            <option value="gain weight">Gain Weight</option>
+            <option value="loose weight">Loose Weight</option>
+            <option value="stay healthy">Stay Healthy</option>
+            <option value="no plan"></option>No Plan</option>
+            </select><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required><br>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Password must be at least 8 characters long and contain at least one letter and one number" required><br>
+    
+            <label for="social">Social Media Handles:</label>
+            <select id="social-links" name="social-links">
+            <option value="none"></option>None</option>
+            <option value="X">X(Twitter)</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Facebook">Facebook</option>
+            </select>
+            <input type="text" id="social" name="social"><br>
+            <input type="submit" value="Sign Up"> 
+        
+</body>

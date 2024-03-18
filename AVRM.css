@@ -2,7 +2,7 @@
    header {
     background-color: hsla(128, 83%, 21%, 0.533);
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 nav {
@@ -60,7 +60,7 @@ nav a:visited{
         display: none;
         position: absolute;
         background-color: #fff; 
-        padding: 10px;
+        padding: 20px;
         top: 100%;
         left: 0;
     }
@@ -84,7 +84,7 @@ nav a:visited{
         background-image: url(pro2.jpg);
         opacity: 1;
         padding: 60px;
-        margin: 5px;
+        margin: 10px;
         font-weight: 700;
         font-size: large;
         font-family: 'Times New Roman', Times, serif;
@@ -96,6 +96,8 @@ nav a:visited{
         font-style: normal;
         font-size: large;
         background-image: url(pro2.jpg);
+        padding: 20px;
+        
     }
     label {
         display: block;
@@ -138,16 +140,21 @@ nav a:visited{
         background-color: #a07f45;
     }
    
-.hidden {
-    display: none;
-}
+
 
 .search{
     width: 20%;
     height: 10%;
     padding-right: 0%;
     border-color: #4CAF50;
-}  
+    margin-top: 10px;
+} 
+.submit-search{
+    margin-top: 5px
+    background-color: #89c692e3;
+    border: #000;
+
+} 
 
 .generator-form{
     display: flex;
@@ -169,9 +176,10 @@ nav a:visited{
     background-image: url(afric.jpg);
     width: 50%;
     margin: auto;
-    padding: 10px;
-    
-    
+    margin-top: 30px;
+    padding-top: 10px;  
+    font-size: x-large; 
+    color: #4CAF50;
 }
 .suggest{
     margin: 0%;
@@ -181,10 +189,11 @@ nav a:visited{
 .RED-RED{
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;  
+    margin-bottom: 5px;  
 }
 .RED-RED a{
-    margin-left: 16px;
+    margin-left: 12px;
     text-align: left;
     font-weight: bold;
     width: 400px;
@@ -213,12 +222,14 @@ a :visited{
 
 footer {
     background-color: #45a049;
-    background-image: url(plant.jpeg);
+    background-image: url(pro2.jpg);
     text-align: center;
     font-size: larger;
     border-radius: 10cm;
-    border: 0cqmax;
     color:rgb(58, 43, 6);
+    background-size: contain;
+    margin: 50px;
+
 }
 
 .social-links a {
@@ -229,7 +240,6 @@ footer {
 
 .social-links img {
     width: 40px;
-    height: 30px;
-    border-radius: 50%;
-
+    height: 40px;
+    margin: 5px;
 }
