@@ -62,15 +62,15 @@ document.getElementById('signup-link').addEventListener('click', function(event)
 });
 
 
-// Function to show or hide the generator section based on sign-in status
+// Function to blur or make  the generator section inactive based on sign-in status
 function toggleGeneratorVisibility() {
     var generatorSection = document.getElementById("generator");
     
     // Check if the user is signed in
     if (isUserSignedIn()) {
-        generatorSection.style.display = "block"; // Show the generator section
+        generatorSection.style.display = "inactive"; // Show the generator section
     } else {
-        generatorSection.style.display = "none"; // Hide the generator section
+        generatorSection.style.display = " "; // Hide the generator section
     }
 }
 
