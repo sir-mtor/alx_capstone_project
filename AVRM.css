@@ -1,0 +1,245 @@
+/* Style for form elements */
+   header {
+    background-color: hsla(128, 83%, 21%, 0.533);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav a:active{
+    text-decoration: yellow;
+}
+nav a:visited{
+    text-decoration: yellowgreen;
+}
+ header{
+        background-image: url('vegan.lo.jpeg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:top-left; 
+    }
+    nav ul .sub-menu {
+        display: none;
+        position: absolute;
+        background-color: #fff; 
+        padding: 10px;
+    }
+    
+    nav ul li:hover .sub-menu {
+        display: block;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        position: relative;
+    }
+    
+    nav ul li:hover .sub-menu {
+        display: block;
+    }
+    
+    nav ul .sub-menu {
+        display: none;
+        position: absolute;
+        background-color: #fff; 
+        padding: 20px;
+        top: 100%;
+        left: 0;
+    }
+    
+    nav ul .sub-menu li {
+        display: inline-block;
+    }
+    
+    nav ul .sub-menu li a {
+        display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #000; 
+    }
+    
+    nav ul .sub-menu li a:hover {
+        background-color: #f0f0f0; 
+    }
+     
+    .hero{
+        background-image: url(pro2.jpg);
+        opacity: 1;
+        padding: 60px;
+        margin: 10px;
+        font-weight: 700;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        color: #291c07;
+    }
+    .about-us{
+        width: 60%;
+        margin: auto;
+        font-style: normal;
+        font-size: large;
+        background-image: url(pro2.jpg);
+        padding: 20px;
+        
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+     input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    } 
+    h2{
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: unset;
+        font-size: large;
+    }
+    
+    textarea {
+        height: 100px;
+    }
+    
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #a07f45;
+    }
+   
+
+
+.search{
+    width: 20%;
+    height: 10%;
+    padding-right: 0%;
+    border-color: #4CAF50;
+    margin-top: 10px;
+} 
+.submit-search{
+    margin-top: 5px
+    background-color: #89c692e3;
+    border: #000;
+
+} 
+
+.generator-form{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    color: #0c0a88;
+    
+}
+.generator {
+    width: 80%;
+    margin: auto;
+    background-color: #84cf87;
+    background-image: url(fres.jpg);
+    font-family: 'Times New Roman', Times, ;
+}
+.comments{
+    background-image: url(afric.jpg);
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 10px;  
+    font-size: x-large; 
+    color: #4CAF50;
+}
+.suggest{
+    margin: 0%;
+    color: orangered;
+}
+
+.RED-RED{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 5px;  
+}
+.RED-RED a{
+    margin-left: 12px;
+    text-align: left;
+    font-weight: bold;
+    width: 400px;
+}
+a h3{
+    text-decoration: underline;
+    color: goldenrod;
+}
+a{
+    color: olive;
+    text-decoration: none;
+}
+a :hover{
+    text-decoration: underline;
+}
+a :active{
+    text-decoration: #4CAF50;
+}
+a :visited{
+    text-decoration: yellow;
+}
+
+
+
+/* Style for footer */
+
+footer {
+    background-color: #45a049;
+    background-image: url(pro2.jpg);
+    text-align: center;
+    font-size: larger;
+    border-radius: 10cm;
+    color:rgb(58, 43, 6);
+    background-size: contain;
+    margin: 50px;
+
+}
+
+.social-links a {
+    display: contents;
+    margin: 0 5px;
+    margin-top: 10px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
