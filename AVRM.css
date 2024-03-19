@@ -79,6 +79,43 @@ nav a:visited{
     nav ul .sub-menu li a:hover {
         background-color: #f0f0f0; 
     }
+    #recipe-menu {
+        position: relative;
+      }
+      
+      #recipe-options {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        z-index: 999;
+      }
+      
+      #recipe-options li {
+        list-style: none;
+      }
+      
+      #recipe-options li a {
+        text-decoration: none;
+        color: white ;
+        display: block;
+        padding: 5px 0;
+      }
+      
+      #recipe-options li a:hover {
+        background-color: #f0f0f0;
+      }
+      
+      #recipe-button {
+        background: none;
+        border: none;
+        color: white;
+       
+      }
+      
      
     .hero{
         background-image: url(pro2.jpg);
@@ -173,13 +210,13 @@ nav a:visited{
     font-family: 'Times New Roman', Times, ;
 }
 .comments{
-    background-image: url(afric.jpg);
+    background-image: url(veee.webp);
     width: 50%;
     margin: auto;
     margin-top: 30px;
     padding-top: 10px;  
     font-size: x-large; 
-    color: #4CAF50;
+    color: black;
 }
 .suggest{
     margin: 0%;
@@ -221,8 +258,6 @@ a :visited{
 /* Style for footer */
 
 footer {
-    background-color: #45a049;
-    background-image: url(pro2.jpg);
     text-align: center;
     font-size: larger;
     border-radius: 10cm;

@@ -140,6 +140,36 @@ function populateCommentForm() {
 }
 
 // Call the function to populate the comment form when the page loads
-populateCommentForm();
+populateCommentForm();document.addEventListener("DOMContentLoaded", function() {
+    populateCommentForm();
+});
 
 
+//API 
+const url = 'https://the-vegan-recipes-db.p.rapidapi.com/45';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '336ec34850msh8e17a63b2741dcbp133116jsndc166fe38340',
+		'X-RapidAPI-Host': 'the-vegan-recipes-db.p.rapidapi.com'
+	}
+};
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.text();
+	console.log(result);
+} catch (error) {
+	console.error(error);
+} 
+
+//recipe menu 
+document.getElementById('recipe-button').addEventListener('click', function() {
+    var recipeOptions = document.getElementById('recipe-options');
+    if (recipeOptions.style.display === 'none') {
+      recipeOptions.style.display = 'block';
+    } else {
+      recipeOptions.style.display = 'none';
+    }
+  });
+  
