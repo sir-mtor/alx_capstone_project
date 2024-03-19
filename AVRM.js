@@ -45,6 +45,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+//Recipe menu dropdown
+    document.getElementById("recipe-button").addEventListener("click", function() {
+        var options = document.getElementById("recipe-options");
+        options.style.display = options.style.display === "none" ? "block" : "none";
+    });
+
+
 // Function to check if the user is signed in
 function isUserSignedIn() {
     // Implement your logic to check if the user is signed in
@@ -52,6 +60,19 @@ function isUserSignedIn() {
     var isSignedIn = true;
     return isSignedIn;
 }
+
+// Function to perform restricted action
+function performRestrictedAction() {
+    // Check if the user is signed in
+    if (isUserSignedIn()) {
+        // Perform the restricted action
+        console.log("Restricted action performed.");
+    } else {
+        // Redirect the user to the sign-in page or display an error message
+        console.log("User is not signed in. Redirecting to sign-in page or displaying an error message.");
+    }
+}
+
 // JavaScript to toggle visibility of the signup form when the signup link is clicked
 document.getElementById('signup-link').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent default link behavior
