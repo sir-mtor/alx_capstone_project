@@ -5,7 +5,7 @@ document.getElementById("signup-form").addEventListener("submit", function(event
     var phone = document.getElementById("phone").value;
     var password = document.getElementById("password").value;
     
-    // Basic validation
+    // secondary validation
     if (name === "" || email === "" || phone === "" || password === "") {
         alert("Please fill in all fields.");
         event.preventDefault(); // Prevent form submission
@@ -32,7 +32,7 @@ function isValidPhoneNumber(phone) {
 
 // Display confirmation message after successful form submission
 document.getElementById("signup-form").addEventListener("submit", function() {
-    alert("GREAT JOB! Now let's enjoy a vegan meal");
+    alert("GREAT JOB! Now let's cook a vegan meal");
 });
 
 // Smooth scrolling for navigation links
@@ -45,18 +45,35 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+const dropdownLinks = document.querySelectorAll('.dropdown');
 
-//Recipe menu dropdown
-    document.getElementById("recipe-button").addEventListener("click", function() {
-        var options = document.getElementById("recipe-options");
-        options.style.display = options.style.display === "none" ? "block" : "none";
-    });
+        dropdownLinks.forEach(dropdown => {
+        const dropdownContent = dropdown.querySelector('.dropdown-content');
+        dropdown.addEventListener('focusin', () => {
+            dropdownContent.style.display = 'block';
+        });
+        dropdown.addEventListener('focusout', () => {
+            dropdownContent.style.display = 'none';
+        });
+        });
+// //Recipe menu dropdown
+//     document.getElementById("recipe-button").addEventListener("click", function() {
+//         var options = document.getElementById("recipe-options");
+//         options.style.display = options.style.display === "none" ? "block" : "none";
+//     });
 
+//     //recipe menu 
+// document.getElementById('recipe-button').addEventListener('click', function() {
+//     var recipeOptions = document.getElementById('recipe-options');
+//     if (recipeOptions.style.display === 'none') {
+//       recipeOptions.style.display = 'block';
+//     } else {
+//       recipeOptions.style.display = 'none';
+//     }
+//   });
 
 // Function to check if the user is signed in
 function isUserSignedIn() {
-    // Implement your logic to check if the user is signed in
-    // For demonstration purposes, let's assume a variable isSignedIn is set to true if the user is signed in
     var isSignedIn = true;
     return isSignedIn;
 }
@@ -68,12 +85,12 @@ function performRestrictedAction() {
         // Perform the restricted action
         console.log("Restricted action performed.");
     } else {
-        // Redirect the user to the sign-in page or display an error message
+        // Redirect the user to the sign-in page
         console.log("User is not signed in. Redirecting to sign-in page or displaying an error message.");
     }
 }
 
-// JavaScript to toggle visibility of the signup form when the signup link is clicked
+// toggle visibility of the signup form when the signup link is clicked
 document.getElementById('signup-link').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent default link behavior
 
@@ -166,7 +183,7 @@ populateCommentForm();document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-//API 
+//API to fetch recipe
 const url = 'https://the-vegan-recipes-db.p.rapidapi.com/45';
 const options = {
 	method: 'GET',
@@ -184,13 +201,5 @@ try {
 	console.error(error);
 } 
 
-//recipe menu 
-document.getElementById('recipe-button').addEventListener('click', function() {
-    var recipeOptions = document.getElementById('recipe-options');
-    if (recipeOptions.style.display === 'none') {
-      recipeOptions.style.display = 'block';
-    } else {
-      recipeOptions.style.display = 'none';
-    }
-  });
+
   

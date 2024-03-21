@@ -27,7 +27,7 @@ The webpage design is responsive and optimized for mobile devices, ensuring seam
 Technologies Used
 
 Frontend: HTML5, CSS3, JavaScript
-Backend: Node.js, Express.js
+Backend: Node.js,
 Database: SQL
 Web Hosting: AWS or similar cloud platform
 Additional Libraries: Bootstrap for responsive design, Handlebars.js for templating
